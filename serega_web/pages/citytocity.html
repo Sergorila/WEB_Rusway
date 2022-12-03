@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Город в город</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="header alternative">
+    <div class="header__content">
+      <div class="header__nav nav">
+        <div class="header__nav burgerandlogo">
+          <div class="header__nav-icon">
+            <a href=""><img src="../img/burger-icon.svg" alt="burger-icon"></a>
+          </div>
+          <div class="header__nav-logo">
+            <a href=""><img src="../img/logo.png" alt="logo"></a>
+          </div>
+        </div>
+        <div class="header__nav-city city_alternative">
+          <a href="" class="city_link">
+            <p class="city_link-text">Москва</p>
+          </a>
+        </div>
+        <span class="palka"></span>
+        <div class="header__nav-list">
+          <p>Калькулятор</p>
+          <p>Оставить заявку</p>
+          <p>Контакты</p>
+        </div>
+        <span class="palka"></span>
+        <div class="header__nav-phone">
+          <p class="number">+7 (499) 685-16-80</p>
+        </div>
+
+      </div>
+      <div class="header__title-info title-info-alt">
+        <h1 class="title-info__title">Рассчитайте стоимость своей перевозки</h1>
+      </div>
+      <div class="header__calculator calculator">
+        <div class="input-wrapper">
+          <div class="calculator__input">
+            <span>Откуда?</span>
+            <img src="../img/calc_1.svg" alt="calc1" class="calculator__input-icon">
+            <input type="text" class="input-from" placeholder="Откуда" required>
+          </div>
+          <div class="calculator__input-reverse">
+            <div class="calculator__input-reverse-imgWrapper">
+              <img src="../img/coolicon.svg" alt="arrow" class="calculator__input-reverse-imgWrapper-top">
+              <img src="../img/coolicon.svg" alt="arrow" class="calculator__input-reverse-imgWrapper-bot">
+            </div>
+          </div>
+          <div class="calculator__input">
+            <span>Куда?</span>
+            <img src="../img/calc_2.svg" alt="calc2" class="calculator__input-icon">
+            <input type="text" class="input-where" placeholder="Куда" required>
+          </div>
+          <div class="calculator__input">
+            <span>Вес</span>
+            <img src="../img/calc_3.svg" alt="calc3" class="calculator__input-icon">
+            <span class="input-weight-kg">кг</span>
+            <input type="text" class="input-weight" placeholder="Вес" required>
+          </div>
+
+        </div>
+        <button class="calculator__button">Рассчитать</button>
+      </div>
+      <div class="alternative__links">
+        <a href="../pages/index.html" class="alternative__links-link">Главная</a>
+        <div class="alternative__links-point"></div>
+        <a href="" class="alternative__links-link">Калькулятор</a>
+        <div class="alternative__links-point"></div>
+        <a href="../pages/price.html" class="alternative__links-link">Цены</a>
+        <div class="alternative__links-point"></div>
+        <a href="../pages/fromcity.html" class="alternative__links-link">Из города</a>
+        <div class="alternative__links-point"></div>
+        <a href="../pages/citytocity.html" class="alternative__links-link">Город в город</a>
+      </div>
+    </div>
+  </div>
+  <div class="citytocity">
+    <div class="citytocity__content">
+      <div class="citytocity__content_info">
+        <h1 class="citytocity__content_info-title">Цены на грузоперевозки по России</h1>
+        <p class="citytocity__content_info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="citytocity__content__tablica">
+        <table class="citytocity__content__tablica-table">
+          <thead class="citytocity__content__tablica-table__theader">
+            <th class="citytocity__content__tablica-table__theader_ther">Перевозки</th>
+            <th class="citytocity__content__tablica-table__theader_ther">3 тонны</th>
+            <th class="citytocity__content__tablica-table__theader_ther">5 тонн</th>
+            <th class="citytocity__content__tablica-table__theader_ther">10 тонн</th>
+            <th class="citytocity__content__tablica-table__theader_ther">20 тонн</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="citytocity__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="citytocity__content__tablica-table__tder">10 000 ₽</td>
+              <td class="citytocity__content__tablica-table__tder">10 000 ₽</td>
+              <td class="citytocity__content__tablica-table__tder">10 000 ₽</td>
+              <td class="citytocity__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="citytocity__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="citytocity__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="citytocity__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="citytocity__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="citytocity__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="citytocity__content__row">
+        <div class="citytocity__content__row-info">
+          <p class="citytocity__content__row-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        </div>
+        <button class="citytocity__content__row-btn">Скачать тарифы</button>
+      </div>
+      <div class="citytocity__content__cargotypes">
+        <h1 class="citytocity__content__cargotypes-title">Какие грузы мы возим</h1>
+        <div class="citytocity__content__cargotypes__blocks">
+          <div class="citytocity__content__cargotypes__blocks_block">
+            <img src="../img/billboards1.svg" alt="billboards1" class="citytocity__content__cargotypes__blocks_block-img">
+            <p class="citytocity__content__cargotypes__blocks_block-text">Рекламные материалы</p>
+          </div>
+          <div class="citytocity__content__cargotypes__blocks_block">
+            <img src="../img/boring-machine.svg" alt="billboards1" class="citytocity__content__cargotypes__blocks_block-img">
+            <p class="citytocity__content__cargotypes__blocks_block-text">Станки</p>
+          </div>
+          <div class="citytocity__content__cargotypes__blocks_block">
+            <img src="../img/fence-gate1.svg" alt="billboards1" class="citytocity__content__cargotypes__blocks_block-img">
+            <p class="citytocity__content__cargotypes__blocks_block-text">Металлоконструкции</p>
+          </div>
+          <div class="citytocity__content__cargotypes__blocks_block">
+            <img src="../img/tractor1.svg" alt="billboards1" class="citytocity__content__cargotypes__blocks_block-img">
+            <p class="citytocity__content__cargotypes__blocks_block-text">Спецтехника</p>
+          </div>
+        </div>
+        <div class="citytocity__content__cargotypes__blocks">
+          <div class="citytocity__content__cargotypes__blocks_block">
+            <img src="../img/circular-saw1.svg" alt="billboards1" class="citytocity__content__cargotypes__blocks_block-img">
+            <p class="citytocity__content__cargotypes__blocks_block-text">Оборудование и инструменты</p>
+          </div>
+          <div class="citytocity__content__cargotypes__blocks_block">
+            <img src="../img/warehouse1.svg" alt="billboards1" class="citytocity__content__cargotypes__blocks_block-img">
+            <p class="citytocity__content__cargotypes__blocks_block-text">ТНП</p>
+          </div>
+          <div class="citytocity__content__cargotypes__blocks_block">
+            <img src="../img/cement-plastering1.svg" alt="billboards1" class="citytocity__content__cargotypes__blocks_block-img">
+            <p class="citytocity__content__cargotypes__blocks_block-text">Стройматериалы</p>
+          </div>
+          <div class="citytocity__content__cargotypes__blocks_block">
+            <img src="../img/textile1.svg" alt="billboards1" class="citytocity__content__cargotypes__blocks_block-img">
+            <p class="citytocity__content__cargotypes__blocks_block-text">Текстиль</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="questions">
+    <h1 class="questions__title">Остались вопросы?</h1>
+    <div class="questions__list">
+      <div class="questions__list-contacts">
+        <p class="questions__list-contacts-text">Свяжитесь с нами</p>
+        <div class="row">
+          <img src="../img/carbon_phone.svg" alt="carbon_phone" class="questions__list-contacts-cont-icon">
+          <p class="questions__list-contacts-cont">+7 (499) 685-16-80</p>
+        </div>
+        <div class="row">
+          <img src="../img/codicon_mail.svg" alt="codicon_mail" class="questions__list-contacts-cont-icon">
+          <p class="questions__list-contacts-cont">fizeisoumoi-6343@yopmail.com</p>
+        </div>
+      </div>
+      <div class="questions__list-form">
+        <p class="questions__list-form-text">Или заполните форму, и мы Вам перезвоним</p>
+        <div class="row">
+          <input type="text" class="questions__list-form-input" placeholder="Имя">
+          <input type="text" class="questions__list-form-input" placeholder="Телефон">
+        </div>
+        <div class="row">
+          <button class="questions__list-form-btn">Оставить заявку</button>
+          <p class="questions__list-form-desc">Нажимая на кнопку, Вы даете согласие
+            на обработку персональных данных
+            и соглашаетесь с политикой конфиденциальности.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="autopark">
+    <div class="autopark__content">
+      <h1 class="autopark__content-title">Автопарк</h1>
+      <div class="autopark__content__blocks">
+        <div class="autopark__content__blocks_block">
+          <img src="../img/autopark1.png" alt="autopark1" class="autopark__content__blocks_block-img">
+          <p class="autopark__content__blocks_block-text">Газель</p>
+        </div>
+        <div class="autopark__content__blocks_block">
+          <img src="../img/autopark2.png" alt="autopark1" class="autopark__content__blocks_block-img">
+          <p class="autopark__content__blocks_block-text">3 тонник</p>
+        </div>
+        <div class="autopark__content__blocks_block">
+          <img src="../img/autopark3.png" alt="autopark1" class="autopark__content__blocks_block-img">
+          <p class="autopark__content__blocks_block-text">5 тонник</p>
+        </div>
+      </div>
+      <div class="autopark__content__blocks">
+        <div class="autopark__content__blocks_block">
+          <img src="../img/autopark4.png" alt="autopark1" class="autopark__content__blocks_block-img">
+          <p class="autopark__content__blocks_block-text">10 тонник</p>
+        </div>
+        <div class="autopark__content__blocks_block">
+          <img src="../img/autopark5.png" alt="autopark1" class="autopark__content__blocks_block-img">
+          <p class="autopark__content__blocks_block-text">Фура</p>
+        </div>
+        <div class="autopark__content__blocks_block">
+          <img src="../img/autopark6.png" alt="autopark1" class="autopark__content__blocks_block-img">
+          <p class="autopark__content__blocks_block-text">Контейнеровоз</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="citytocitymap">
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A12eba1c984613368ddaea596a49cfb7cd89a5e07f7d1e34106e474b7ee066646&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+  </div>
+  <div class="pricestomoscow">
+    <div class="pricestomoscow__content">
+      <h1 class="pricestomoscow__content-title">Цены на грузоперевозки в Москву</h1>
+      <div class="pricestomoscow__content_btnrow">
+        <button class="pricestomoscow__content_btnrow-btn">Из города</button>
+        <button class="pricestomoscow__content_btnrow-btn">В город</button>
+      </div>
+      <div class="pricestomoscow__content__tablica">
+        <table class="pricestomoscow__content__tablica-table">
+          <thead class="pricestomoscow__content__tablica-table__theader">
+            <th class="pricestomoscow__content__tablica-table__theader_ther">Перевозки</th>
+            <th class="pricestomoscow__content__tablica-table__theader_ther">3 тонны</th>
+            <th class="pricestomoscow__content__tablica-table__theader_ther">5 тонн</th>
+            <th class="pricestomoscow__content__tablica-table__theader_ther">10 тонн</th>
+            <th class="pricestomoscow__content__tablica-table__theader_ther">20 тонн</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder">Пенза - Москва</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder">10 000 ₽</td>
+            </tr>
+            <tr>
+              <td class="pricestomoscow__content__tablica-table__tder1">Москва - Пенза</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+              <td class="pricestomoscow__content__tablica-table__tder1">10 000 ₽</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="reviews">
+    <h1 class="reviews__title">Отзывы</h1>
+    <div class="swiper swiperRev">
+      <div class="swiper-wrapper swiperRev-wrapper">
+        <div class="swiper-slide swiperRev-slide">
+          <div class="row">
+            <div class="logoImg">
+              <img src="../img/rev1.svg" alt="rev1" class="row__img">
+            </div>
+            <div class="row__items">
+              <p class="row__items-name">Ксения Иванова</p>
+            </div>
+          </div>
+          <p class="revText">Хочу поблагодарить за отличную работу компанию "Ruswal".
+            Приняли груз, все качественно и оперативно
+            упаковано в стрейч пленку, без повреждений, спасибо.</p>
+          <div class="row__foot">
+            <img src="../img/track-route2.svg" alt="track-route2" class="row__foot-img">
+            <div class="row__foot-items">
+              <p class="row__foot-items-text">Москва - Санкт-Петербург: 705 км.</p>
+              <p class="row__foot-items-text">Вес: 349 кг.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiperRev-slide">
+          <div class="row">
+            <div class="logoImg">
+              <img src="../img/image24.png" alt="rev1" class="row__img2">
+            </div>
+            <div class="row__items">
+              <p class="row__items-name">Ксения Иванова</p>
+              <p class="row__items-company">ООО «Компания»</p>
+            </div>
+          </div>
+          <p class="revText">Во-первых, у меня была потребность в грузоперевозки до Сочи, но так как там у
+            меня был
+            знакомый, который на грузоперевозках себя зарекомендовал с лучшей стороны, он мне и
+            порекомендовал именно
+            эту компанию.
+            В общем, я созвонился с ними и обговорил все детали.</p>
+          <div class="row__foot">
+            <img src="../img/track-route2.svg" alt="track-route2" class="row__foot-img">
+            <div class="row__foot-items">
+              <p class="row__foot-items-text">Москва - Сочи: 1 623 км.</p>
+              <p class="row__foot-items-text">Вес: 542 кг.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiperRev-slide">
+          <div class="row">
+            <div class="logoImg">
+              <img src="../img/image23.png" alt="rev1" class="row__img3">
+            </div>
+            <div class="row__items">
+              <p class="row__items-name">Ксения Иванова</p>
+              <p class="row__items-company">ООО «Компания»</p>
+            </div>
+          </div>
+          <p class="revText">Перевозка прошла без задержек, водитель Алексей очень хороший специалист своего
+            дела,
+            опытный, аккуратный, пунктуальный и ответственный,
+            автомобиль был без каких-либо проблемм, всё в дорогу и обратно было упаковано и готово к
+            отправке.</p>
+          <div class="row__foot">
+            <img src="../img/track-route2.svg" alt="track-route2" class="row__foot-img">
+            <div class="row__foot-items">
+              <p class="row__foot-items-text">Москва - Сочи: 1 623 км.</p>
+              <p class="row__foot-items-text">Вес: 754 кг.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrows">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="reviews__buttons">
+      <a href="../pages/reviews.html" class="reviews__buttons-btn1">Все отзывы</a>
+      <button class="reviews__buttons-btn2">Оставить отзыв</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__row">
+      <div class="footer__row__column">
+        <img src="../img/footerlogo.svg" alt="footerlogo" class="footer__row__column-logo">
+        <p class="footer__row__column-bold">Контакты</p>
+        <p class="footer__row__column-usual">+7 (499) 685-16-80</p>
+        <p class="footer__row__column-usual">fizeisoumoi-6343@yopmail.com</p>
+        <p class="footer__row__column-usual">613710, г. Москва,
+          ул. Путинковский М. пер, 3</p>
+      </div>
+      <div class="footer__row__column">
+        <p class="footer__row__column-bold">Компания</p>
+        <p class="footer__row__column-usual">О компании</p>
+        <p class="footer__row__column-usual">Типы перевозок</p>
+        <p class="footer__row__column-usual">Отрасли</p>
+        <p class="footer__row__column-usual">Наши преимущества</p>
+        <p class="footer__row__column-usual">Новости</p>
+        <p class="footer__row__column-usual">Остались вопросы?</p>
+        <p class="footer__row__column-usual">Контакты</p>
+      </div>
+      <div class="footer__row__column">
+        <p class="footer__row__column-bold">Услуги</p>
+        <p class="footer__row__column-usual">Отдельные машины</p>
+        <p class="footer__row__column-usual">Сборные грузы</p>
+        <p class="footer__row__column-usual">Перевозки негабарита</p>
+        <p class="footer__row__column-usual">Срочные перевозки</p>
+        <p class="footer__row__column-usual">Контейнерные перевозки</p>
+        <p class="footer__row__column-usual">Страхование груза</p>
+      </div>
+      <div class="footer__row__column">
+        <p class="footer__row__column-bold">Направления</p>
+        <p class="footer__row__column-usual">По России</p>
+        <p class="footer__row__column-usual">По Беларуси</p>
+        <p class="footer__row__column-usual">По Казахстану</p>
+        <p class="footer__row__column-usual">По Абхазии</p>
+        <p class="footer__row__column-usual">По Киргизии</p>
+        <p class="footer__row__column-usual">Международные перевозки</p>
+      </div>
+    </div>
+    <div class="footer__license">
+      <p class="footer__license-text">2021 © RusWay. Все права защищены.</p>
+    </div>
+  </div>
+
+
+  <script>
+    var swiper = new Swiper(".swiperRev", {
+      allowTouchMove: false,
+      slidesPerView: 3,
+      loop: true,
+      spaceBetween: 40,
+      navigation: {
+        enabled: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>

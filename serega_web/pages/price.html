@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Цена</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="header alternative">
+    <div class="header__content">
+      <div class="header__nav nav">
+        <div class="header__nav burgerandlogo">
+          <div class="header__nav-icon">
+            <a href=""><img src="../img/burger-icon.svg" alt="burger-icon"></a>
+          </div>
+          <div class="header__nav-logo">
+            <a href=""><img src="../img/logo.png" alt="logo"></a>
+          </div>
+        </div>
+        <div class="header__nav-city city_alternative">
+          <a href="" class="city_link">
+            <p class="city_link-text">Москва</p>
+          </a>
+        </div>
+        <span class="palka"></span>
+        <div class="header__nav-list">
+          <p>Калькулятор</p>
+          <p>Оставить заявку</p>
+          <p>Контакты</p>
+        </div>
+        <span class="palka"></span>
+        <div class="header__nav-phone">
+          <p class="number">+7 (499) 685-16-80</p>
+        </div>
+
+      </div>
+      <div class="header__title-info title-info-alt">
+        <h1 class="title-info__title">Рассчитайте стоимость своей перевозки</h1>
+      </div>
+      <div class="header__calculator calculator">
+        <div class="input-wrapper">
+          <div class="calculator__input">
+            <span>Откуда?</span>
+            <img src="../img/calc_1.svg" alt="calc1" class="calculator__input-icon">
+            <input type="text" class="input-from" placeholder="Откуда" required>
+          </div>
+          <div class="calculator__input-reverse">
+            <div class="calculator__input-reverse-imgWrapper">
+              <img src="../img/coolicon.svg" alt="arrow" class="calculator__input-reverse-imgWrapper-top">
+              <img src="../img/coolicon.svg" alt="arrow" class="calculator__input-reverse-imgWrapper-bot">
+            </div>
+          </div>
+          <div class="calculator__input">
+            <span>Куда?</span>
+            <img src="../img/calc_2.svg" alt="calc2" class="calculator__input-icon">
+            <input type="text" class="input-where" placeholder="Куда" required>
+          </div>
+          <div class="calculator__input">
+            <span>Вес</span>
+            <img src="../img/calc_3.svg" alt="calc3" class="calculator__input-icon">
+            <span class="input-weight-kg">кг</span>
+            <input type="text" class="input-weight" placeholder="Вес" required>
+          </div>
+
+        </div>
+        <button class="calculator__button">Рассчитать</button>
+      </div>
+      <div class="alternative__links">
+        <a href="../pages/index.html" class="alternative__links-link">Главная</a>
+        <div class="alternative__links-point"></div>
+        <a href="" class="alternative__links-link">Калькулятор</a>
+        <div class="alternative__links-point"></div>
+        <a href="../pages/price.html" class="alternative__links-link">Цены</a>
+      </div>
+    </div>
+  </div>
+  <div class="cities">
+    <div class="cities__content">
+      <div class="cities__content_search">
+        <input type="text" class="cities__content_search--input" placeholder="Напишите название города">
+        <button class="cities__content_search-btn">
+          <img src="../img/input_search.png" alt="input_search" class="cities__content_search-btn-icon">
+        </button>
+      </div>
+      <div class="cities__content_row">
+        <div class="cities__blocks">
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">А</p>
+            <p class="cities__blocks--block-usual">Абакан</p>
+            <p class="cities__blocks--block-usual">Азов</p>
+            <p class="cities__blocks--block-usual">Альметьевск</p>
+            <p class="cities__blocks--block-usual">Анапа</p>
+            <p class="cities__blocks--block-usual">Ангарск</p>
+            <p class="cities__blocks--block-usual">Архангельск</p>
+            <p class="cities__blocks--block-usual">Астрахань</p>
+            <p class="cities__blocks--block-usual">Ачинск</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Б</p>
+            <p class="cities__blocks--block-usual">Балаково</p>
+            <p class="cities__blocks--block-usual">Балашов</p>
+            <p class="cities__blocks--block-usual">Барнаул</p>
+            <p class="cities__blocks--block-usual">Батайск</p>
+            <p class="cities__blocks--block-usual">Белгород</p>
+            <p class="cities__blocks--block-usual">Бердск</p>
+            <p class="cities__blocks--block-usual">Биробиджан</p>
+            <p class="cities__blocks--block-usual">Благовещенск</p>
+            <p class="cities__blocks--block-usual">Братск</p>
+            <p class="cities__blocks--block-usual">Брянск</p>
+            <p class="cities__blocks--block-usual">Бузулук</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">В</p>
+            <p class="cities__blocks--block-usual">Великий Новгород</p>
+            <p class="cities__blocks--block-usual">Видное</p>
+            <p class="cities__blocks--block-usual">Владивосток</p>
+            <p class="cities__blocks--block-usual">Владикавказ</p>
+            <p class="cities__blocks--block-usual">Владимир</p>
+            <p class="cities__blocks--block-usual">Волгоград</p>
+            <p class="cities__blocks--block-usual">Волгодонск</p>
+            <p class="cities__blocks--block-usual">Волжский</p>
+            <p class="cities__blocks--block-usual">Вологда</p>
+            <p class="cities__blocks--block-usual">Воркута</p>
+            <p class="cities__blocks--block-usual">Воронеж</p>
+            <p class="cities__blocks--block-usual">Воскресенск</p>
+            <p class="cities__blocks--block-usual">Всеволожск</p>
+            <p class="cities__blocks--block-usual">Выкса</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Г</p>
+            <p class="cities__blocks--block-usual">Горно-Алтайск</p>
+            <p class="cities__blocks--block-usual">Грозный</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Д</p>
+            <p class="cities__blocks--block-usual">Дзержинск</p>
+            <p class="cities__blocks--block-usual">Димитровград</p>
+            <p class="cities__blocks--block-usual">Долгопрудный</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Е</p>
+            <p class="cities__blocks--block-usual">Екатеринбург</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">З</p>
+            <p class="cities__blocks--block-usual">Златоуст</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">И</p>
+            <p class="cities__blocks--block-usual">Иваново</p>
+          </div>
+        </div>
+        <div class="cities__blocks">
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-usual">Ивантеевка</p>
+            <p class="cities__blocks--block-usual">Ижевск</p>
+            <p class="cities__blocks--block-usual">Иркутск</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Й</p>
+            <p class="cities__blocks--block-usual">Йошкар-Ола</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">К</p>
+            <p class="cities__blocks--block-usual">Калининград</p>
+            <p class="cities__blocks--block-usual">Калуга</p>
+            <p class="cities__blocks--block-usual">Камышин</p>
+            <p class="cities__blocks--block-usual">Кемерово</p>
+            <p class="cities__blocks--block-usual">Керчь</p>
+            <p class="cities__blocks--block-usual">Киров</p>
+            <p class="cities__blocks--block-usual">Кисловодск</p>
+            <p class="cities__blocks--block-usual">Когалым</p>
+            <p class="cities__blocks--block-usual">Коломна</p>
+            <p class="cities__blocks--block-usual">Комсомольск-на-Амуре</p>
+            <p class="cities__blocks--block-usual">Кострома</p>
+            <p class="cities__blocks--block-usual">Краснодар</p>
+            <p class="cities__blocks--block-usual">Краснокаменск</p>
+            <p class="cities__blocks--block-usual">Красноярск</p>
+            <p class="cities__blocks--block-usual">Крымск</p>
+            <p class="cities__blocks--block-usual">Курган</p>
+            <p class="cities__blocks--block-usual">Курск</p>
+            <p class="cities__blocks--block-usual">Кызыл</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Л</p>
+            <p class="cities__blocks--block-usual">Ленск</p>
+            <p class="cities__blocks--block-usual">Лесосибирск</p>
+            <p class="cities__blocks--block-usual">Липецк</p>
+            <p class="cities__blocks--block-usual">Люберцы</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">М</p>
+            <p class="cities__blocks--block-usual">Магадан</p>
+            <p class="cities__blocks--block-usual">Магнитогорск</p>
+            <p class="cities__blocks--block-usual">Майкоп</p>
+            <p class="cities__blocks--block-usual">Махачкала</p>
+            <p class="cities__blocks--block-usual">Миасс</p>
+            <p class="cities__blocks--block-usual">Минеральные Воды</p>
+            <p class="cities__blocks--block-usual">Москва</p>
+            <p class="cities__blocks--block-usual">Мурманск</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Н</p>
+            <p class="cities__blocks--block-usual">Набережные Челны</p>
+            <p class="cities__blocks--block-usual">Надым</p>
+            <p class="cities__blocks--block-usual">Назрань</p>
+            <p class="cities__blocks--block-usual">Нальчик</p>
+            <p class="cities__blocks--block-usual">Наро-Фоминск</p>
+            <p class="cities__blocks--block-usual">Находка</p>
+            <p class="cities__blocks--block-usual">Нефтекамск</p>
+            <p class="cities__blocks--block-usual">Нижнекамск</p>
+            <p class="cities__blocks--block-usual">Нижний Новгород</p>
+            <p class="cities__blocks--block-usual">Нижний Тагил</p>
+            <p class="cities__blocks--block-usual">Новоалтайск</p>
+            <p class="cities__blocks--block-usual">Новокузнецк</p>
+            <p class="cities__blocks--block-usual">Новороссийск</p>
+            <p class="cities__blocks--block-usual">Новосибирск</p>
+          </div>
+        </div>
+        <div class="cities__blocks">
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-usual">Новоуральск</p>
+            <p class="cities__blocks--block-usual">Новочеркасск</p>
+            <p class="cities__blocks--block-usual">Новый Уренгой</p>
+            <p class="cities__blocks--block-usual">Ногинск</p>
+            <p class="cities__blocks--block-usual">Ноябрьск</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">О</p>
+            <p class="cities__blocks--block-usual">Обнинск</p>
+            <p class="cities__blocks--block-usual">Одинцово</p>
+            <p class="cities__blocks--block-usual">Омск</p>
+            <p class="cities__blocks--block-usual">Орёл</p>
+            <p class="cities__blocks--block-usual">Оренбург</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">П</p>
+            <a href="../pages/fromcity.html" class="cities__blocks--block-usual">Пенза</a>
+            <p class="cities__blocks--block-usual">Первоуральск</p>
+            <p class="cities__blocks--block-usual">Пермь</p>
+            <p class="cities__blocks--block-usual">Петрозаводск</p>
+            <p class="cities__blocks--block-usual">Петропавловск-Камчатский</p>
+            <p class="cities__blocks--block-usual">Подольск</p>
+            <p class="cities__blocks--block-usual">Псков</p>
+            <p class="cities__blocks--block-usual">Пушкино</p>
+            <p class="cities__blocks--block-usual">Пятигорск</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Р</p>
+            <p class="cities__blocks--block-usual">Ростов</p>
+            <p class="cities__blocks--block-usual">Ростов-на-Дону</p>
+            <p class="cities__blocks--block-usual">Рязань</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">С</p>
+            <p class="cities__blocks--block-usual">Салават</p>
+            <p class="cities__blocks--block-usual">Салехард</p>
+            <p class="cities__blocks--block-usual">Самара</p>
+            <p class="cities__blocks--block-usual">Санкт-Петербург</p>
+            <p class="cities__blocks--block-usual">Саранск</p>
+            <p class="cities__blocks--block-usual">Саратов</p>
+            <p class="cities__blocks--block-usual">Саров</p>
+            <p class="cities__blocks--block-usual">Севастополь</p>
+            <p class="cities__blocks--block-usual">Северодвинск</p>
+            <p class="cities__blocks--block-usual">Серпухов</p>
+            <p class="cities__blocks--block-usual">Симферополь</p>
+            <p class="cities__blocks--block-usual">Смоленск</p>
+            <p class="cities__blocks--block-usual">Соликамск</p>
+            <p class="cities__blocks--block-usual">Солнечногорск</p>
+            <p class="cities__blocks--block-usual">Сочи</p>
+            <p class="cities__blocks--block-usual">Ставрополь</p>
+            <p class="cities__blocks--block-usual">Старый Оскол</p>
+            <p class="cities__blocks--block-usual">Стерлитамак</p>
+            <p class="cities__blocks--block-usual">Сургут</p>
+            <p class="cities__blocks--block-usual">Сызрань</p>
+            <p class="cities__blocks--block-usual">Сыктывкар</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Т</p>
+            <p class="cities__blocks--block-usual">Таганрог</p>
+            <p class="cities__blocks--block-usual">Тамбов</p>
+            <p class="cities__blocks--block-usual">Тверь</p>
+            <p class="cities__blocks--block-usual">Тобольск</p>
+            <p class="cities__blocks--block-usual">Тольятти</p>
+          </div>
+        </div>
+        <div class="cities__blocks">
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-usual">Томск</p>
+            <p class="cities__blocks--block-usual">Троицк</p>
+            <p class="cities__blocks--block-usual">Туапсе</p>
+            <p class="cities__blocks--block-usual">Тула</p>
+            <p class="cities__blocks--block-usual">Тюмень</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">У</p>
+            <p class="cities__blocks--block-usual">Улан-Удэ</p>
+            <p class="cities__blocks--block-usual">Ульяновск</p>
+            <p class="cities__blocks--block-usual">Уссурийск</p>
+            <p class="cities__blocks--block-usual">Уфа</p>
+            <p class="cities__blocks--block-usual">Ухта</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Ф</p>
+            <p class="cities__blocks--block-usual">Фрязино</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Х</p>
+            <p class="cities__blocks--block-usual">Хабаровск</p>
+            <p class="cities__blocks--block-usual">Ханты-Мансийск</p>
+            <p class="cities__blocks--block-usual">Химки</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Ч</p>
+            <p class="cities__blocks--block-usual">Чапаевск</p>
+            <p class="cities__blocks--block-usual">Чебоксары</p>
+            <p class="cities__blocks--block-usual">Челябинск</p>
+            <p class="cities__blocks--block-usual">Череповец</p>
+            <p class="cities__blocks--block-usual">Черкесск</p>
+            <p class="cities__blocks--block-usual">Чехов</p>
+            <p class="cities__blocks--block-usual">Чита</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Щ</p>
+            <p class="cities__blocks--block-usual">Щекино</p>
+            <p class="cities__blocks--block-usual">Щелково</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Э</p>
+            <p class="cities__blocks--block-usual">Электросталь</p>
+            <p class="cities__blocks--block-usual">Элиста</p>
+            <p class="cities__blocks--block-usual">Энгельс</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Ю</p>
+            <p class="cities__blocks--block-usual">Южно-Сахалинск</p>
+          </div>
+          <div class="cities__blocks--block">
+            <p class="cities__blocks--block-bold">Я</p>
+            <p class="cities__blocks--block-usual">Якутск</p>
+            <p class="cities__blocks--block-usual">Ялта</p>
+            <p class="cities__blocks--block-usual">Ярославль</p>
+          </div>
+        </div>
+      </div>
+      <div class="cities__bot">
+        <span class="cities__bot_palka"></span>
+        <div class="cities__bot_info">
+          <h1 class="cities__bot_info-title">Цены на грузоперевозки по России</h1>
+          <p class="cities__bot_info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="questions">
+    <h1 class="questions__title">Остались вопросы?</h1>
+    <div class="questions__list">
+      <div class="questions__list-contacts">
+        <p class="questions__list-contacts-text">Свяжитесь с нами</p>
+        <div class="row">
+          <img src="../img/carbon_phone.svg" alt="carbon_phone" class="questions__list-contacts-cont-icon">
+          <p class="questions__list-contacts-cont">+7 (499) 685-16-80</p>
+        </div>
+        <div class="row">
+          <img src="../img/codicon_mail.svg" alt="codicon_mail" class="questions__list-contacts-cont-icon">
+          <p class="questions__list-contacts-cont">fizeisoumoi-6343@yopmail.com</p>
+        </div>
+      </div>
+      <div class="questions__list-form">
+        <p class="questions__list-form-text">Или заполните форму, и мы Вам перезвоним</p>
+        <div class="row">
+          <input type="text" class="questions__list-form-input" placeholder="Имя">
+          <input type="text" class="questions__list-form-input" placeholder="Телефон">
+        </div>
+        <div class="row">
+          <button class="questions__list-form-btn">Оставить заявку</button>
+          <p class="questions__list-form-desc">Нажимая на кнопку, Вы даете согласие
+            на обработку персональных данных
+            и соглашаетесь с политикой конфиденциальности.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews">
+    <h1 class="reviews__title">Отзывы</h1>
+    <div class="swiper swiperRev">
+      <div class="swiper-wrapper swiperRev-wrapper">
+        <div class="swiper-slide swiperRev-slide">
+          <div class="row">
+            <div class="logoImg">
+              <img src="../img/rev1.svg" alt="rev1" class="row__img">
+            </div>
+            <div class="row__items">
+              <p class="row__items-name">Ксения Иванова</p>
+            </div>
+          </div>
+          <p class="revText">Хочу поблагодарить за отличную работу компанию "Ruswal".
+            Приняли груз, все качественно и оперативно
+            упаковано в стрейч пленку, без повреждений, спасибо.</p>
+          <div class="row__foot">
+            <img src="../img/track-route2.svg" alt="track-route2" class="row__foot-img">
+            <div class="row__foot-items">
+              <p class="row__foot-items-text">Москва - Санкт-Петербург: 705 км.</p>
+              <p class="row__foot-items-text">Вес: 349 кг.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiperRev-slide">
+          <div class="row">
+            <div class="logoImg">
+              <img src="../img/image24.png" alt="rev1" class="row__img2">
+            </div>
+            <div class="row__items">
+              <p class="row__items-name">Ксения Иванова</p>
+              <p class="row__items-company">ООО «Компания»</p>
+            </div>
+          </div>
+          <p class="revText">Во-первых, у меня была потребность в грузоперевозки до Сочи, но так как там у меня был
+            знакомый, который на грузоперевозках себя зарекомендовал с лучшей стороны, он мне и порекомендовал именно
+            эту компанию.
+            В общем, я созвонился с ними и обговорил все детали.</p>
+          <div class="row__foot">
+            <img src="../img/track-route2.svg" alt="track-route2" class="row__foot-img">
+            <div class="row__foot-items">
+              <p class="row__foot-items-text">Москва - Сочи: 1 623 км.</p>
+              <p class="row__foot-items-text">Вес: 542 кг.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiperRev-slide">
+          <div class="row">
+            <div class="logoImg">
+              <img src="../img/image23.png" alt="rev1" class="row__img3">
+            </div>
+            <div class="row__items">
+              <p class="row__items-name">Ксения Иванова</p>
+              <p class="row__items-company">ООО «Компания»</p>
+            </div>
+          </div>
+          <p class="revText">Перевозка прошла без задержек, водитель Алексей очень хороший специалист своего дела,
+            опытный, аккуратный, пунктуальный и ответственный,
+            автомобиль был без каких-либо проблемм, всё в дорогу и обратно было упаковано и готово к отправке.</p>
+          <div class="row__foot">
+            <img src="../img/track-route2.svg" alt="track-route2" class="row__foot-img">
+            <div class="row__foot-items">
+              <p class="row__foot-items-text">Москва - Сочи: 1 623 км.</p>
+              <p class="row__foot-items-text">Вес: 754 кг.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrows">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+    <div class="reviews__buttons">
+      <a href="../pages/reviews.html" class="reviews__buttons-btn1">Все отзывы</a>
+      <button class="reviews__buttons-btn2">Оставить отзыв</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__row">
+      <div class="footer__row__column">
+        <img src="../img/footerlogo.svg" alt="footerlogo" class="footer__row__column-logo">
+        <p class="footer__row__column-bold">Контакты</p>
+        <p class="footer__row__column-usual">+7 (499) 685-16-80</p>
+        <p class="footer__row__column-usual">fizeisoumoi-6343@yopmail.com</p>
+        <p class="footer__row__column-usual">613710, г. Москва,
+          ул. Путинковский М. пер, 3</p>
+      </div>
+      <div class="footer__row__column">
+        <p class="footer__row__column-bold">Компания</p>
+        <p class="footer__row__column-usual">О компании</p>
+        <p class="footer__row__column-usual">Типы перевозок</p>
+        <p class="footer__row__column-usual">Отрасли</p>
+        <p class="footer__row__column-usual">Наши преимущества</p>
+        <p class="footer__row__column-usual">Новости</p>
+        <p class="footer__row__column-usual">Остались вопросы?</p>
+        <p class="footer__row__column-usual">Контакты</p>
+      </div>
+      <div class="footer__row__column">
+        <p class="footer__row__column-bold">Услуги</p>
+        <p class="footer__row__column-usual">Отдельные машины</p>
+        <p class="footer__row__column-usual">Сборные грузы</p>
+        <p class="footer__row__column-usual">Перевозки негабарита</p>
+        <p class="footer__row__column-usual">Срочные перевозки</p>
+        <p class="footer__row__column-usual">Контейнерные перевозки</p>
+        <p class="footer__row__column-usual">Страхование груза</p>
+      </div>
+      <div class="footer__row__column">
+        <p class="footer__row__column-bold">Направления</p>
+        <p class="footer__row__column-usual">По России</p>
+        <p class="footer__row__column-usual">По Беларуси</p>
+        <p class="footer__row__column-usual">По Казахстану</p>
+        <p class="footer__row__column-usual">По Абхазии</p>
+        <p class="footer__row__column-usual">По Киргизии</p>
+        <p class="footer__row__column-usual">Международные перевозки</p>
+      </div>
+    </div>
+    <div class="footer__license">
+      <p class="footer__license-text">2021 © RusWay. Все права защищены.</p>
+    </div>
+  </div>
+
+
+  <script>
+    var swiper = new Swiper(".swiperRev", {
+      allowTouchMove: false,
+      slidesPerView: 3,
+      loop: true,
+      spaceBetween: 40,
+      navigation: {
+        enabled: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
