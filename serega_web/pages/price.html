@@ -12,6 +12,32 @@
 </head>
 
 <body>
+  <div class="navmenu">
+    <div class="navmenu__firstpage">
+      <div class="navmenu__firstpage__exitrow">
+        <img src="../img/menu_exit.svg" alt="" class="navmenu__firstpage__exitrow-icon">
+      </div>
+      <div class="navmenu__firstpage__content">
+        <p class="navmenu__firstpage__content-p menu2">О компании</p>
+        <a href="../pages/typesperevozok.html" class="navmenu__firstpage__content-link">Виды транспортировок</a>
+        <a href="../pages/services.html" class="navmenu__firstpage__content-link">Услуги</a>
+        <a href="" class="navmenu__firstpage__content-link">Вопросы</a>
+        <a href="../pages/otrasl_uslugi.html" class="navmenu__firstpage__content-link">Отраслевые услуги</a>
+        <a href="../pages/contacts.html" class="navmenu__firstpage__content-link">Контакты</a>
+        <a href="" class="navmenu__firstpage__content-link">Калькулятор</a>
+      </div>
+    </div>
+    <div class="navmenu__secondpage">
+      <div class="navmenu__secondpage__exitrow"></div>
+      <div class="navmenu__secondpage__content">
+        <a href="" class="navmenu__secondpage__content-link">О нас</a>
+        <a href="" class="navmenu__secondpage__content-link">Наша команда</a>
+        <a href="" class="navmenu__secondpage__content-link">Документы</a>
+        <a href="../pages/reviews.html" class="navmenu__secondpage__content-link">Отзывы</a>
+        <a href="../pages/news.html" class="navmenu__secondpage__content-link">Новости</a>
+      </div>
+    </div>
+  </div>
   <div class="header alternative">
     <div class="header__content">
       <div class="header__nav nav">
@@ -32,7 +58,7 @@
         <div class="header__nav-list">
           <p>Калькулятор</p>
           <p>Оставить заявку</p>
-          <p>Контакты</p>
+          <a href="../pages/contacts.html" class="header__nav-list-link">Контакты</a>
         </div>
         <span class="palka"></span>
         <div class="header__nav-phone">
@@ -50,10 +76,13 @@
             <img src="../img/calc_1.svg" alt="calc1" class="calculator__input-icon">
             <input type="text" class="input-from" placeholder="Откуда" required>
           </div>
-          <div class="calculator__input-reverse">
-            <div class="calculator__input-reverse-imgWrapper">
-              <img src="../img/coolicon.svg" alt="arrow" class="calculator__input-reverse-imgWrapper-top">
-              <img src="../img/coolicon.svg" alt="arrow" class="calculator__input-reverse-imgWrapper-bot">
+          <div class="fixknopki">
+            <span>ы</span>
+            <div class="calculator__input-reverse">
+              <div class="calculator__input-reverse-imgWrapper">
+                <img src="../img/coolicon.svg" alt="arrow" class="calculator__input-reverse-imgWrapper-top">
+                <img src="../img/coolicon.svg" alt="arrow" class="calculator__input-reverse-imgWrapper-bot">
+              </div>
             </div>
           </div>
           <div class="calculator__input">
@@ -479,15 +508,15 @@
       <div class="footer__row__column">
         <p class="footer__row__column-bold">Компания</p>
         <p class="footer__row__column-usual">О компании</p>
-        <p class="footer__row__column-usual">Типы перевозок</p>
-        <p class="footer__row__column-usual">Отрасли</p>
+        <a href="../pages/typesperevozok.html" class="footer__row__column-usual">Типы перевозок</a>
+        <a href="../pages/otrasl_uslugi.html" class="footer__row__column-usual">Отрасли</a>
         <p class="footer__row__column-usual">Наши преимущества</p>
-        <p class="footer__row__column-usual">Новости</p>
+        <a href="../pages/news.html" class="footer__row__column-usual">Новости</a>
         <p class="footer__row__column-usual">Остались вопросы?</p>
-        <p class="footer__row__column-usual">Контакты</p>
+        <a href="../pages/contacts.html" class="footer__row__column-usual">Контакты</a>
       </div>
       <div class="footer__row__column">
-        <p class="footer__row__column-bold">Услуги</p>
+        <a href="../pages/services.html" class="footer__row__column-usual">Услуги</a>
         <p class="footer__row__column-usual">Отдельные машины</p>
         <p class="footer__row__column-usual">Сборные грузы</p>
         <p class="footer__row__column-usual">Перевозки негабарита</p>
@@ -524,6 +553,7 @@
       },
     });
   </script>
+  <script src="../scripts/menu_appear.js"></script>
 </body>
 
 </html>
